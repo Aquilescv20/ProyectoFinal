@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {  
+    background-image: linear-gradient(to right, #232329, #1729ce);
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    line-height: 1.5em;
+}
+
+.contenedorPrincipal {
+    background-image: linear-gradient(to right, #232329, #1729ce);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #181515;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+
+header nav ul li {
+    list-style: none;
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    color: #eff1f3;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    background-color: #d30505;
+    color: white;
+    border-radius: 15%;
+}
+.navbar img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    float: left;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.btn_inicio {
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    z-index: 9999;
+    border-radius: 50%;
+    border: none;
+    background: #e90303;
+    height: 30px;
+    width: 30px;
+}
+
+.btn_inicio:hover {
+    background-color: #e9030396;
+}
+
+main section {
+    padding: 30px;
+}
+
+main section p {
+    text-align: justify;
+    margin-bottom: 16px;
+    color: #292424;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    color: #131625;
+}
+
+aside {
+    width: 100%;
+    float: left;
+    padding: 30px;
+}
+
+aside h2 {
+    color: #fff;
+}
+
+aside h3 {
+    color: #fff;
+}
+
+aside a {
+    color: #01f501;
+}
+
+.services{
+    background-color: #4354b8;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    padding: 60px;
+    background-color: #e90303;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+@media screen and(max-width: 800px) {
+
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    aside {
+        width: 100%;
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    background: url('/img/Carrusel/slider_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+.button{
+    border-radius: 30%;
+}
+.a{
+    color: blue;
+}

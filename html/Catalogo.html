@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/Catalogo.css" type="text/css">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-gradient opacity" style="background: #000;">
+            <div class="container-fluid">
+                <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false"
+                    aria-label="Toggle navigation" style="border: none; outline: none;box-shadow: none">
+                    <i id="navbarIcon" class="bi bi-text-left" style="color: white; border: none"></i>
+                </button>
+                <a href="/index.html" class="navbar-brand fw-bold fs-4" style="color: white"><span class="fw-bold fs-2"
+                        style="color: red">MASS </span>MOTOS S.R.L.</a>
+
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Marcas.html">MARCAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"" style=" background-color:red;"
+                                href="Catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Blog.html">BLOG</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a class="btn" href="Login.html">
+                    <i class="bi bi-person-circle bi-lg" style="color: #0f0e0e;"></i>
+                </a>
+            </div>
+    </header>
+    <br><br>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-todos"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">TODOS</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-deportiva"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">DEPORTIVA</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-todo_terreno"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">TODO TERRENO</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-scooter"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SCOOTER</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cuatrimoto"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">CUATRIMOTO</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-motocarguero"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">MOTO CARGUERO</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-detalle"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i
+                    class="bi bi-cart4"></i></a>
+        </li>
+
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade container show active" id="pills-todos" role="tabpanel"
+            aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">NEXUS-250rr</h5>
+                        <img src="/img/motos/deportiva/nexus/nexus-250rr.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rz-200</h5>
+                        <img src="/img/motos/deportiva/Ronco/ronco-rz-200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button onclick="agregar()" href="#" class="btn btn-primary button"
+                                    id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">KTM-rc200</h5>
+                        <img src="/img/motos/deportiva/susuki/ktm-rc200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button onclick="agregar()" class="btn btn-primary button"
+                                    id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">YAMAHA-yzf-r15-ver40</h5>
+                        <img src="/img/motos/deportiva/susuki/yamaha-yzf-r15-ver40.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button onclick="agregar()" href="#" class="btn btn-primary button"
+                                    id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-dominator-250</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-dominator-250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button onclick="agregar()" href="#" class="btn btn-primary button"
+                                    id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-plorer-200r</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-plorer-200r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button onclick="agregar()" href="#" class="btn btn-primary button"
+                                    id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-plorer-200v1</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-plorer-200v1-.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-tremo-200r</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-tremo-200r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">italika-rc110b</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cautrimoto2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">Italika-rc110c</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">ITALIKA-rc110r</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">X-PRO-12cc</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110b</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110c</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110c.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110r</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button" id="button_agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc125c</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc125c.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-300</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-300.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-AC-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-AC-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-B-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-B-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">Ronco/TRAKTOR-T-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-T-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="tab-pane fade container" id="pills-deportiva" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">NEXUS-250rr</h5>
+                        <img src="/img/motos/deportiva/nexus/nexus-250rr.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rz-200</h5>
+                        <img src="/img/motos/deportiva/Ronco/ronco-rz-200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">KTM-rc200</h5>
+                        <img src="/img/motos/deportiva/susuki/ktm-rc200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">YAMAHA-yzf-r15-ver40</h5>
+                        <img src="/img/motos/deportiva/susuki/yamaha-yzf-r15-ver40.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">SSENDA-ss200-x7-v2</h5>
+                        <img src="/img/motos/deportiva/Ssenda/ssenda-ss200-x7-v2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">ITALIKA-atv150</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/italika-atv150.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">JETTOR-t-rex-150</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/jettor-t-rex-150.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">KTM-rc200</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">YAMAHA-yzf-r15</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-dominator-250</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade container" id="pills-todo_terreno" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-dominator-250</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-dominator-250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-plorer-200r</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-plorer-200r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-plorer-200v1</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-plorer-200v1-.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-tremo-200r</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-tremo-200r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-terra-250</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-terra-250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-tremo-a-200</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-tremo-a-200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-terra-2502</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-terra-2502.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-dominator</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-dominator-250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade container" id="pills-cuatrimoto" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">italika-rc110b</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cautrimoto2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">Italika-rc110c</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">ITALIKA-rc110r</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">X-PRO-12cc</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RAZOR DIR QUAD 500</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">HONDA-tr150-rx</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/cuatrimoto5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">ITALIKA-atv150</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/italika-atv150.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">JETTOR-t-rex-150.jpeg</h5>
+                        <img src="/img/motos/cuatrimoto/Ilalika/jettor-t-rex-150.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade container" id="pills-scooter" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110b</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110c</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110c.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc110r</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc110r.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-rc125c</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-rc125c.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-tr125h</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-tr125h.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-tr150-rx</h5>
+                        <img src="/img/motos/Scooter/ronco/ronco-tr150-rx.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-x-terra-2502</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-x-terra-2502.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">RONCO-dominator</h5>
+                        <img src="/img/motos/todo terreno/Ronco/ronco-dominator-250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade container" id="pills-motocarguero" role="tabpanel"
+            aria-labelledby="pills-disabled-tab" tabindex="0">
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-300</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-300.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-AC-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-AC-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">TRAKTOR-B-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-B-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">Ronco/TRAKTOR-T-250</h5>
+                        <img src="/img/motos/Moto carga/Ronco/TRAKTOR-T-250.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">YANSUMI-DUAL</h5>
+                        <img src="/img/motos/Moto carga/Yansumi/carguero-azul-marca-yansumi-con-llanta-dual.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">YANSUMI-PANTANERA</h5>
+                        <img src="/img/motos/Moto carga/Yansumi/Motocarguera-con-llanta-pantanera.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio"> s/ 2000.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">ranger-350-de-yansumi</h5>
+                        <img src="/img/motos/Moto carga/Yansumi/ranger-350-de-yansumi.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio<span class="precio">$ 15820.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center md-4">
+                    <div class="card shadow mb-1 bg-white roudend" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center">LANAVE-150</h5>
+                        <img src="/img/motos/Moto carga/Ronco/LANAVE-150.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-dark-50 description">Some quick example text to build on the
+                                card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio :<span class="precio">$ 14920.00</span></h5>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary button">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade carrito" id="pills-detalle" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+
+
+                </tbody>
+            </table>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-white">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify content-end">
+                    <button class="btn btn-success">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="scrollToTop" class="position-fixed mb-2 me-2 btn_inicio" href="#">
+        <i class="bi bi-chevron-double-up" style="color: white"></i>
+    </button>
+
+    <footer>
+        <p>Desarrollado por: GRUPO_MAKANAKI</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/btn.js"></script>
+</body>
+
+</html>

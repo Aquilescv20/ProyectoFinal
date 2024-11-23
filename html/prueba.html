@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/prueba.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+
+        <div id="header">
+            <div id="title">
+                <span>MAS MOTOS SRL</span>
+            </div>
+            <div id="menu-btn">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+        </div>
+
+        <div id="profile">
+            <div id="photo">
+                <img src="/img/dashboard/perfil.png" alt="">
+            </div>
+            <div id="name">
+                <span>user</span>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon">
+                        <img src="/img/dashboard/casa.webp" alt="">
+                    </div>
+                    <div class="title">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+            </div>
+            <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/reporte.webp" alt=""></div>
+          <div class="title"><span>Reporte</span></div>
+        </a>
+      </div>
+      <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/users.webp" alt=""></div>
+          <div class="title"><span>Empleados</span></div>
+        </a>
+      </div>
+      <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/provee.webp" alt=""></div>
+          <div class="title"><span>Proveedores</span></div>
+        </a>
+      </div>
+      <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/product.webp" alt=""></div>
+          <div class="title"><span>Productos</span></div>
+        </a>
+      </div>
+      <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/ventas.webp" alt=""></div>
+          <div class="title"><span>Ventas</span></div>
+        </a>
+      </div>
+      <br>
+      <div class="item">
+        <a href="#">
+          <div class="icon"><img src="/img/dashboard/compras.webp" alt=""></div>
+          <div class="title"><span>Compras</span></div>
+        </a>
+      </div>
+        </div>
+
+    </div>
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+
+        })
+    </script>
+</body>
+
+</html>
